@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour {
+
+    public PlayerState currentState;
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
     // Start is called before the first frame update
     void Start() {
+        currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
     }
@@ -18,9 +21,24 @@ public class Movement : MonoBehaviour {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
-        
+        if(input.GetButtonDown("attack") && currentState != PlayerState.attack) {
+            StartCoroutine(AttackCo());
+        }
+        else if (currentSate == PlayerState.walk) {
+            UpdateAnimationAndMove();
+        }
+
     }
+
+    private Ienumerator AttackCo() {
+        animator.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
+        currentState = PlayerState.walk;
+    }
+
     void UpdateAnimationAndMove() {
         if (change != Vector3.zero) {
             MoveCharacter();
