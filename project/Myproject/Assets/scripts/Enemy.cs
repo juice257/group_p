@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     public int baseAttack;
     public float moveSpeed;
 
-
+    //yes
     // Start is called before the first frame update
     void Start() {
         
