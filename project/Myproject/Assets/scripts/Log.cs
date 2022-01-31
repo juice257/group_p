@@ -34,9 +34,10 @@ public class Log : Enemy
             if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
             {
                 Vector3 temp = Vector3.MoveTowards(transform.position,
-                target.position, moveSpeed * Time.deltaTime);
-                myRigidbody.MovePosition(temp);
+               (target.position, moveSpeed* Time.deltaTime);
+
                 changeAnim(temp - transform.position);
+                myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
                 anim.SetBool("wakeUp", true);
             }
@@ -49,16 +50,32 @@ public class Log : Enemy
     }
 
 
-    private void changeAnim(Vector2 direction)
-    {
-        Debug.Log(direction);
-    }
-    private void ChangeState(EnemyState newState)
-    {
+    private void changeAnim(Vector2 direction) {
+        if (Mathf.abs(direction.x) > Mathf.abs(direction.y))
+        {
+            if (direction.x > 0){
+                SetAnimFloat(Vector2.left);
+            }else if (direction.x < 0)
+            {
+                SetAnimFloat(Vector2.down);           
+            }
+        }else if(Mathf.abs(direction.x) < Mathf.abs(direction.y)){ 
+            if(direction.y > 0)
+            {
+                SetAnimFloat(Vector2.up);
+            }else if (direction.y < 0)
+            {
+                SetAnimFloat(Vector2.down);
+            }
+        }
+}
+
+    private void ChangeState(EnemyState newState){
         if (currentState != newState)
         {
             currentState = newState;
         }
     }
-
 }
+
+
