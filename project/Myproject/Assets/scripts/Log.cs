@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Log : Enemy
 {
-
     private Rigidbody2D myRigidbody;
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform Origin;
     public Animator anim;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +19,7 @@ public class Log : Enemy
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         CheckDistance();
     }
 
@@ -34,32 +30,32 @@ public class Log : Enemy
             if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
             {
                 Vector3 temp = Vector3.MoveTowards(transform.position,
-               (target.position, moveSpeed* Time.deltaTime);
+               target.position, moveSpeed* Time.deltaTime);
 
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
                 anim.SetBool("wakeUp", true);
             }
-        }
-        else
+        }else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
-
             anim.SetBool("wakeup", false);
         }
     }
-
-
+    private void SetAnimFloat(Vector2 setVector){
+        anim.SetFloat("moveX", setVector.x);
+        anim.SetFloat("moveY", setVector.y);
+    }
     private void changeAnim(Vector2 direction) {
-        if (Mathf.abs(direction.x) > Mathf.abs(direction.y))
+        if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            if (direction.x > 0){
+            if(direction.x > 0){
                 SetAnimFloat(Vector2.left);
             }else if (direction.x < 0)
             {
-                SetAnimFloat(Vector2.down);           
+                SetAnimFloat(Vector2.right);
             }
-        }else if(Mathf.abs(direction.x) < Mathf.abs(direction.y)){ 
+        }else if(Mathf.Abs(direction.x) < Mathf.Abs(direction.y)){ 
             if(direction.y > 0)
             {
                 SetAnimFloat(Vector2.up);
@@ -69,7 +65,6 @@ public class Log : Enemy
             }
         }
 }
-
     private void ChangeState(EnemyState newState){
         if (currentState != newState)
         {
@@ -77,5 +72,3 @@ public class Log : Enemy
         }
     }
 }
-
-
