@@ -2,35 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< HEAD
 public class Log : Enemy
 {
     private Rigidbody2D myRigidbody;
-=======
-public class Log : Enemy {
-
->>>>>>> parent of 8ef578b2 (Part 20)
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform Origin;
     public Animator anim;
     // Start is called before the first frame update
-<<<<<<< HEAD
     void Start()
     {
         currentState = EnemyState.idle;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-=======
-    void Start() {
->>>>>>> parent of 8ef578b2 (Part 20)
         target = GameObject.FindWithTag("Player").transform;
 
     }
 
     // Update is called once per frame
-<<<<<<< HEAD
     void FixedUpdate() {
         CheckDistance();
     }
@@ -54,18 +44,6 @@ public class Log : Enemy {
         else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
         {
             anim.SetBool("wakeUp", false);
-=======
-    void Update()
-    {
-        CheckDistance();       
-    }
-
-    void CheckDistance() {
-        if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) {
-            transform.position = Vector3.MoveTowards(transform.position, 
-            target.position, moveSpeed * Time.deltaTime);
-
->>>>>>> parent of 8ef578b2 (Part 20)
         }
     }
         private void SetAnimFloat(Vector2 setVector) {
