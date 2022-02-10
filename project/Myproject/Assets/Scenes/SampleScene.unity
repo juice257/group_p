@@ -17568,6 +17568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  maxHealth: {fileID: 11400000, guid: c5d0aa754d9b0e5478856b3b0400c3ca, type: 2}
   health: 2
   enemyName: Warry
   baseAttack: 1
@@ -17576,6 +17577,7 @@ MonoBehaviour:
   chaseRadius: 4
   attackRadius: 1
   Origin: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!61 &1664561895
 BoxCollider2D:
   m_ObjectHideFlags: 0

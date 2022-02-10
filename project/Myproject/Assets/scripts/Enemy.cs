@@ -10,14 +10,18 @@ public enum EnemyState {
 }
 
 public class Enemy : MonoBehaviour {
-
+    
     public EnemyState currentState;
-    public int health;
+    public FloatValue maxHealth;
+    public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
     
-
+    private void Start()
+    {
+        health = maxHealth.initialValue;
+    }
 
     public void Knock(Rigidbody2D myRigidbody, float knockTime) {
         StartCoroutine(KnockCo(myRigidbody, knockTime));
@@ -25,14 +29,7 @@ public class Enemy : MonoBehaviour {
 
     //yes
     // Start is called before the first frame update
-    void Start() {
-        
-    }
-
-    // Update is called once per frame
-    void Update() {
-        
-    }
+    
 
     private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime) 
     {
