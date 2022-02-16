@@ -18,19 +18,26 @@ public class Enemy : MonoBehaviour {
     public int baseAttack;
     public float moveSpeed;
     
-    private void Start()
+    private void Awake()
     {
         health = maxHealth.initialValue;
     }
-
-    public void Knock(Rigidbody2D myRigidbody, float knockTime) {
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+    public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage) {
         StartCoroutine(KnockCo(myRigidbody, knockTime));
+        TakeDamage(damage);
     }
 
     //yes
     // Start is called before the first frame update
     
-
     private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knockTime) 
     {
         if(myRigidbody != null) {
