@@ -1,0 +1,6 @@
+/Logs/
+/UserSettings/
+project/Myproject/Logs/
+project/Myproject/Temp/
+project/Myproject/Packages/
+project/Myproject/UserSettings/

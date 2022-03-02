@@ -12,15 +12,18 @@ public enum EnemyState {
 public class Enemy : MonoBehaviour {
     
     public EnemyState currentState;
+    // public FloatValue maxHealth;
     public FloatValue maxHealth;
     public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
     
-    private void Awake()
+    private void Start()
     {
+        Debug.Log("asdasdasd");
         health = maxHealth.initialValue;
+
     }
     private void TakeDamage(float damage)
     {

@@ -18427,7 +18427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: {fileID: 11400000, guid: c5d0aa754d9b0e5478856b3b0400c3ca, type: 2}
+  maxHealth: {fileID: 0}
   health: 2
   enemyName: Warry
   baseAttack: 1
@@ -24754,7 +24754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts:
-  - {fileID: 1389014274}
+  - {fileID: 241772094}
   - {fileID: 1621621544}
   - {fileID: 398293016}
   - {fileID: 241772094}
