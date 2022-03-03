@@ -28,21 +28,17 @@ public class HeartManager : MonoBehaviour
     public void UpdateHearts()
     {
         float tempHealth = playerCurrentHealth.initialValue / 2;
-        for (int i= 0; i < heartContainers.initialValue; i++)
-        {
-            if(i <= tempHealth)
-            {
-                //full Hearts
+        for (int i = 0; i < heartContainers.initialValue; i++) {
+            if (i <= tempHealth) {
                 hearts[i].sprite = fullHeart;
-            }else if( i > tempHealth)
-            {
-                //empty Heart
+            } else if ( i > tempHealth) {
                 hearts[i].sprite = emptyHeart;
-            }
-            else{
-                //half full heart
+            }else {
                 hearts[i].sprite = halfFullHeart;
             }
         }
     }
+
+    
+
 }

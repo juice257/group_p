@@ -587,7 +587,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -4430392651179603617, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -845,7 +845,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -4430392651179603617, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2030,7 +2030,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -4430392651179603617, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -18244,7 +18244,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -4430392651179603617, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -18361,7 +18361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664561888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 0.15, z: 0}
+  m_LocalPosition: {x: 4.71, y: -4.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24762,7 +24762,7 @@ MonoBehaviour:
   fullHeart: {fileID: -4430392651179603617, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   halfFullHeart: {fileID: -3276687688264177478, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
   emptyHeart: {fileID: -9053378900703536071, guid: 62fdd5e5028f5c94fb00dc148c4b4b6b, type: 3}
-  heartContainers: {fileID: 11400000, guid: 2d70a6a6cd27d0b478d6c78e5c568b1e, type: 2}
+  heartContainers: {fileID: 11400000, guid: 20d08621fbf9eea42baca7b64e747420, type: 2}
   playerCurrentHealth: {fileID: 11400000, guid: aafc6654bbcf50a4eba6b190f0205017, type: 2}
 --- !u!1 &1767323718
 GameObject:
