@@ -593,7 +593,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &241772095
 CanvasRenderer:
@@ -602,7 +602,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241772092}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &306500033
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &306500036
 CanvasRenderer:
@@ -811,7 +811,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398293014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -820,7 +820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -50}
+  m_AnchoredPosition: {x: 40, y: -49.999954}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398293016
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &398293017
 CanvasRenderer:
@@ -860,7 +860,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398293014}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &426311949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,11 +2032,11 @@ MonoBehaviour:
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &887915526
 CanvasRenderer:
@@ -2045,7 +2045,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887915523}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &915216830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,11 +3098,11 @@ MonoBehaviour:
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1389014275
 CanvasRenderer:
@@ -3111,7 +3111,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389014272}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &1389631487
 GameObject:
   m_ObjectHideFlags: 0
@@ -18250,7 +18250,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1621621545
 CanvasRenderer:
@@ -18259,7 +18259,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621621542}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &1664561888
 GameObject:
   m_ObjectHideFlags: 0
@@ -24754,7 +24754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts:
-  - {fileID: 241772094}
+  - {fileID: 1389014274}
   - {fileID: 1621621544}
   - {fileID: 398293016}
   - {fileID: 241772094}
@@ -25276,6 +25276,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1394450161093241412, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
+      propertyPath: m_Size.y
+      value: 2.9881895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394450161093241412, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.27486384
+      objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -25290,23 +25298,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.81391
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99982595
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018654857
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25318,7 +25326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241413, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.138
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1394450161093241418, guid: 43a54cdef2d32df4394b6b3b26588600, type: 3}
       propertyPath: m_Name

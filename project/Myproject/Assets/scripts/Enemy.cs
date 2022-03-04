@@ -21,7 +21,6 @@ public class Enemy : MonoBehaviour {
     
     private void Start()
     {
-        Debug.Log("asdasdasd");
         health = maxHealth.initialValue;
 
     }
