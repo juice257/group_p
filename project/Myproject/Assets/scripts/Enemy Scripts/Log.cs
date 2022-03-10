@@ -53,10 +53,10 @@ public class Log : Enemy
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
             if (direction.x > 0) {
-                SetAnimFloat(Vector2.left);
+                SetAnimFloat(Vector2.right);
             } else if (direction.x < 0)
             {
-                SetAnimFloat(Vector2.right);
+                SetAnimFloat(Vector2.left);
             }
         } else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y)) {
             if (direction.y > 0)
