@@ -17,6 +17,7 @@ public class RoomMove : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         cam = Camera.main.GetComponent<CameraMovement>();
+        Debug.Log(cam);
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class RoomMove : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("THis happended");
         if(other.CompareTag("Player") && !other.isTrigger) {
             cam.minPosition += cameraChange1;
             cam.maxPosition += cameraChange2;

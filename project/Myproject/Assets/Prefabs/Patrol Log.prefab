@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6940168470572003755}
   - component: {fileID: 6940168470572003754}
   - component: {fileID: 6940168470572003757}
-  - component: {fileID: 6940168470572003756}
   - component: {fileID: 6940168470572003759}
   - component: {fileID: 6940168470572003758}
   m_Layer: 0
@@ -154,29 +153,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6317524, y: 0.48111975}
   m_EdgeRadius: 0
---- !u!114 &6940168470572003756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6940168470572003745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0086f267b121c74bbcc9ea753e985ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  maxHealth: {fileID: 0}
-  health: 2
-  enemyName: Warry
-  baseAttack: 1
-  moveSpeed: 1.5
-  target: {fileID: 0}
-  chaseRadius: 4
-  attackRadius: 1
-  Origin: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!61 &6940168470572003759
 BoxCollider2D:
   m_ObjectHideFlags: 0
