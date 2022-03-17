@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1101939303231662333}
   - component: {fileID: 3674318777560531151}
   - component: {fileID: 2407135845638632541}
+  - component: {fileID: 1614658879}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 987766019
+  m_SortingLayerID: 105195251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4479181887894498110, guid: cdf16b965a1e427439d6dc51463fa600, type: 3}
@@ -120,10 +121,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.28879118}
+  m_Offset: {x: 0, y: -0.28563142}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -134,5 +135,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.5775824}
+  m_Size: {x: 1, y: 1.5712628}
   m_EdgeRadius: 0
+--- !u!114 &1614658879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8125299987999661269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ed34039d6130b4f8f2367595228a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  context: {fileID: 11400000, guid: 8d018ec17932ebf4ab99e0bc62d467f3, type: 2}
+  playerInRange: 0
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: Pond Ahead

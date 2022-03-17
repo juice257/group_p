@@ -17,7 +17,6 @@ public class RoomMove : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         cam = Camera.main.GetComponent<CameraMovement>();
-        Debug.Log(cam);
     }
 
     // Update is called once per frame

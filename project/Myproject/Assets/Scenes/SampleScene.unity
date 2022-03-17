@@ -1899,7 +1899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699289949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.051, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1078901580}
@@ -74808,28 +74808,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1614658878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8125299987999661269, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-  m_PrefabInstance: {fileID: 1539076259016813140}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1614658879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614658878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8ed34039d6130b4f8f2367595228a48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  context: {fileID: 11400000, guid: 8d018ec17932ebf4ab99e0bc62d467f3, type: 2}
-  playerInRange: 0
-  dialogBox: {fileID: 797530039}
-  dialogText: {fileID: 144053600}
-  dialog: Pond Ahead
 --- !u!4 &1614658883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5460757587391964946, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
@@ -91127,30 +91105,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 96600115}
     m_Modifications:
-    - target: {fileID: 1101939303231662333, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1101939303231662333, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 105195251
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407135845638632541, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5712628
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407135845638632541, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.28563142
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407135845638632541, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407135845638632541, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1614658879, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 797530039}
+    - target: {fileID: 1614658879, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 144053600}
     - target: {fileID: 5460757587391964946, guid: 2a2596b71c9afb14a8ad69f5c0f35175, type: 3}
       propertyPath: m_RootOrder
       value: 2
