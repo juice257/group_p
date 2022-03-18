@@ -14,19 +14,11 @@ public class RoomMove : MonoBehaviour {
     public GameObject text;
     public Text placeText;
 
-    // Start is called before the first frame update
     void Start() {
         cam = Camera.main.GetComponent<CameraMovement>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("THis happended");
         if(other.CompareTag("Player") && !other.isTrigger) {
             cam.minPosition += cameraChange1;
             cam.maxPosition += cameraChange2;
@@ -36,6 +28,7 @@ public class RoomMove : MonoBehaviour {
             }
         }
     }
+
     private IEnumerator placeNameCo() {
         text.SetActive(true);
         placeText.text = placeName;
