@@ -1684,19 +1684,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7941555315733710008, guid: 6a9b239364892934ba7505bd1b256553, type: 3}
       propertyPath: m_Size.x
-      value: 0.8797951
+      value: 0.8634834
       objectReference: {fileID: 0}
     - target: {fileID: 7941555315733710008, guid: 6a9b239364892934ba7505bd1b256553, type: 3}
       propertyPath: m_Size.y
-      value: 0.57507086
+      value: 0.16318989
       objectReference: {fileID: 0}
     - target: {fileID: 7941555315733710008, guid: 6a9b239364892934ba7505bd1b256553, type: 3}
       propertyPath: m_Offset.x
-      value: -0.00116539
+      value: -0.009321213
       objectReference: {fileID: 0}
     - target: {fileID: 7941555315733710008, guid: 6a9b239364892934ba7505bd1b256553, type: 3}
       propertyPath: m_Offset.y
-      value: 0.10085654
+      value: -0.10508394
       objectReference: {fileID: 0}
     - target: {fileID: 7941555315733710008, guid: 6a9b239364892934ba7505bd1b256553, type: 3}
       propertyPath: m_IsTrigger
@@ -74853,7 +74853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689147879}
   m_Layer: 0
-  m_Name: Left Room
+  m_Name: Left Room Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90239,7 +90239,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -90892,7 +90892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127863012}
   m_Layer: 0
-  m_Name: bridgeroom
+  m_Name: Bridge Room Collisions
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
